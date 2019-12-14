@@ -1,0 +1,7 @@
+<div class="grid">
+    <div *ngFor="let row of grid; index as i; let odd=odd; let even=even;" class="row" 
+         [ngClass]="{'odd': odd, 'even': even}">
+        <div *ngFor="let cell of row; index as j;" class="cell">
+        </div>
+    </div>
+</div>
